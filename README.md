@@ -1,12 +1,20 @@
 # mobilerecharge-task
 For setting up:
- >git clone https://github.com/Jayati15/mobilerecharge-task.git
- >cd recharge_task
+
+ git clone https://github.com/Jayati15/mobilerecharge-task.git
+ 
+ cd recharge_task
+ 
  Activate the virtual environment:
- >for macos:
+ 
+ for macos:
+ 
    virtualenv env -p python
+   
    source env/bin/activate
+   
  Install the dependencies
+ 
  pip install -r requirements.txt
  
 python manage.py makemigrations
