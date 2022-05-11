@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  sherlocked:
+    restart: always
+    build: .
+    ports:
+      - 8005:8000
+    volumes:
+      - type: volume
+        source: database
+        target: /recharge_task/database/
+    command: >
+      bash -c "python3 manage.py makemigrations
+      && python3 manage.py migrate
+      && /usr/local/bin/gunicorn recharge_task.wsgi:application -b :8000"
+
+volumes:
+  database:
