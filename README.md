@@ -34,8 +34,8 @@ After that just install the local dependencies, run migrations, and start the se
 
 First clone the repository from Github and switch to the new directory:
 
-    $ git clone git@github.com/Jayati15/{{ mobilerecharge-task }}.git
-    $ cd {{ recharge_task }}
+    $ git clone git@github.com/Jayati15/mobilerecharge-task.git
+    $ cd recharge_task
     
 Activate the virtualenv for your project.
     
